@@ -27,6 +27,18 @@ a {
     text-decoration: underline; 
     font-weight: bold;
 }
+@media (max-width:764px) {
+    a {
+        font-size: 0.9rem;
+
+    }
+    .internal-links {
+        display: flex;
+        flex-direction: column;
+        padding: none;
+        margin: 0;
+    }
+}
 ul {
     list-style-type: disc;
     padding: 0rem 1.5rem;
