@@ -1,0 +1,64 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main class="p-6 container mx-auto">
+      <h1>🧑‍🚀 Bienvenidos a todos!</h1>
+      <p>
+        Bienvenido a la plantilla inicial oficial del blog <a
+          href="https://astro.build/">Astro</a
+        >. Este La plantilla sirve como un punto de partida liviano y de estilo
+        minimalista para cualquiera que busque construir un sitio web personal,
+        blog o portafolio con Astro
+      </p>
+      <p>
+        Esta plantilla viene con algunas integraciones ya configuradas en su
+        Archivo <code>astro.config.mjs</code>. Puede personalizar su configuración con
+        <a href="https://astro.build/integrations">Integraciones Astro</a> para agregar
+        herramientas como Tailwind, React o Vue a su proyecto.
+      </p>
+      <p>Aquí hay algunas ideas sobre cómo empezar a utilizar la plantilla:</p>
+      <ul>
+        <li>Edite esta página en <code>src/pages/index.astro</code></li>
+        <li>
+          Edite los elementos del encabezado del sitio en <code>src/components/Header.astro</code>
+        </li>
+        <li>
+          Añade tu nombre al pie de página en <código
+            >src/components/Footer.astro</code>
+        </li>
+        <li>
+          Consulte las publicaciones de blog incluidas en <code>src/pages/blog/</code>
+        </li>
+        <li>
+          Personalice el diseño de la página de la publicación del blog en <código
+            >src/layouts/BlogPost.astro</code>
+        </li>
+      </ul>
+      <p>
+        ¡Divertirse! Si te quedas atascado, recuerda <a
+          href="https://docs.astro.build/"
+          > lea los documentos
+        </a> o <a href="https://astro.build/chat">únete a nosotros en Discord</a> para preguntar
+        preguntas.
+      </p>
+      <p>
+        ¿Buscas una plantilla de blog con un poco más de personalidad? Mira <a
+          href="https://github.com/Charca/astro-blog-template"
+          >plantilla-astro-blog
+        </a> de <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>
