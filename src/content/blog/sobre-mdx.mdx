@@ -1,0 +1,84 @@
+---
+title: 'Usando MDX'
+description: 'Un potente lenguaje que funciona como React permitiendo componentes entre otras cosas'
+pubDate: 'Jan 23 2024'
+heroImage: 'https://pbs.twimg.com/profile_images/1172176255761825793/eeqDiY-x_400x400.jpg'
+---
+
+## MDX: Combina React con Markdown para Experiencias Dinámicas
+
+MDX es una extensión de Markdown que permite la incorporación de componentes React directamente en documentos Markdown. Esta combinación de sintaxis simple de Markdown con la potencia de React brinda una forma única y poderosa de crear contenido interactivo y dinámico. En este artículo, exploraremos qué es MDX y cómo puede utilizarse para mejorar la creación de contenido web.
+
+## Introducción a MDX
+
+MDX es una extensión de Markdown que agrega soporte para componentes React dentro de los documentos Markdown. Esto significa que puedes incluir fácilmente código interactivo, visualizaciones de datos y otros elementos dinámicos directamente en tus documentos.
+
+## Sintaxis Básica
+
+### Componentes React en Markdown
+
+```mdx
+import MyComponent from './MyComponent';
+
+# Mi Documento MDX
+
+Esto es un párrafo en Markdown.
+
+<MyComponent prop1="valor1" prop2="valor2" />
+```
+
+### Uso de Variables y Expresiones
+
+```mdx
+# Saludo
+
+Hola, mi nombre es ${nombre} y tengo ${edad} años.
+```
+
+### Importación de Componentes Externos
+
+```mdx
+import { GraficoInteractivo } from 'libreria-de-graficos';
+
+# Visualización de Datos
+
+A continuación, se muestra un gráfico interactivo:
+
+<GraficoInteractivo datos={datos} />
+```
+
+## Integración con React
+
+MDX se integra sin problemas con proyectos React existentes. Puedes utilizar MDX para escribir la documentación de tus componentes React, lo que facilita la creación de documentación viva y ejemplos interactivos.
+
+## Herramientas y Bibliotecas
+
+- **MDXProvider**: Permite configurar el contexto MDX en tus componentes React, proporcionando un control más granular sobre la renderización de Markdown y componentes React.
+
+```jsx
+import { MDXProvider } from '@mdx-js/react';
+
+const components = {
+  MyComponent,
+  GraficoInteractivo,
+  // Otros componentes personalizados
+};
+
+export const MiApp = ({ children }) => (
+  <MDXProvider components={components}>{children}</MDXProvider>
+);
+```
+
+- **Gatsby MDX Plugin**: Integración con Gatsby para facilitar la creación de sitios web estáticos con contenido MDX.
+
+## Ventajas de MDX
+
+1. **Interactividad en Documentación**: Permite incorporar componentes React directamente en documentos, creando documentación más interactiva y comprensible.
+
+2. **Reutilización de Componentes**: Facilita la reutilización de componentes React existentes en el contexto de documentos Markdown.
+
+3. **Potencia de React**: Aprovecha la potencia de React para crear contenido web más dinámico y personalizado.
+
+## Conclusión
+
+MDX representa una fusión única de Markdown y React, ofreciendo una forma elegante y poderosa de crear contenido web interactivo y dinámico. Ya sea para documentar componentes, escribir tutoriales o crear páginas web, MDX proporciona una solución flexible que aprovecha lo mejor de ambos mundos: la simplicidad de Markdown y la potencia de React. Su creciente popularidad en la comunidad de desarrollo web destaca su capacidad para mejorar la forma en que creamos y compartimos contenido en la web.

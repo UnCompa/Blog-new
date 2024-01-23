@@ -12,52 +12,50 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   </head>
   <body>
     <Header title={SITE_TITLE} />
-    <main class="p-6 container mx-auto">
-      <h1>🧑‍🚀 Bienvenidos a todos!</h1>
-      <p>
-        Bienvenido a la plantilla inicial oficial del blog <a
-          href="https://astro.build/">Astro</a
-        >. Este La plantilla sirve como un punto de partida liviano y de estilo
-        minimalista para cualquiera que busque construir un sitio web personal,
-        blog o portafolio con Astro
-      </p>
-      <p>
-        Esta plantilla viene con algunas integraciones ya configuradas en su
-        Archivo <code>astro.config.mjs</code>. Puede personalizar su configuración con
-        <a href="https://astro.build/integrations">Integraciones Astro</a> para agregar
-        herramientas como Tailwind, React o Vue a su proyecto.
-      </p>
-      <p>Aquí hay algunas ideas sobre cómo empezar a utilizar la plantilla:</p>
-      <ul>
-        <li>Edite esta página en <code>src/pages/index.astro</code></li>
-        <li>
-          Edite los elementos del encabezado del sitio en <code>src/components/Header.astro</code>
-        </li>
-        <li>
-          Añade tu nombre al pie de página en <código
-            >src/components/Footer.astro</code>
-        </li>
-        <li>
-          Consulte las publicaciones de blog incluidas en <code>src/pages/blog/</code>
-        </li>
-        <li>
-          Personalice el diseño de la página de la publicación del blog en <código
-            >src/layouts/BlogPost.astro</code>
-        </li>
-      </ul>
-      <p>
-        ¡Divertirse! Si te quedas atascado, recuerda <a
-          href="https://docs.astro.build/"
-          > lea los documentos
-        </a> o <a href="https://astro.build/chat">únete a nosotros en Discord</a> para preguntar
-        preguntas.
-      </p>
-      <p>
-        ¿Buscas una plantilla de blog con un poco más de personalidad? Mira <a
-          href="https://github.com/Charca/astro-blog-template"
-          >plantilla-astro-blog
-        </a> de <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-      </p>
+    <main class="p-6 container mx-auto h-full w-[1020px]">
+      <section>
+        <span class="text-4xl font-bold bg-clip-text text-transparent
+        bg-gradient-to-r from-sky-400 to-blue-600">¡Bienvenidos a <span class="text-4xl font-bold bg-clip-text text-transparent
+        bg-gradient-to-r from-white to-white">UnCompa.<span class="text-4xl font-bold bg-clip-text text-transparent
+        bg-gradient-to-r from-green-500 to-emerald-500">Dev</span></span></span>
+        <p class="text-lg">
+          ¡Hola a todos en el blog de UnCompa.dev! Este es tu lugar para explorar el fascinante mundo de la programación, desde HTML y CSS hasta JavaScript y más.
+        </p>
+        <p class="text-lg mt-4">
+          Descubre nuevas perspectivas y avances emocionantes en el campo de la programación. ¡Prepárate para sumergirte en el conocimiento y la creatividad!
+        </p>
+      </section>
+    
+      <section class="mt-6">
+        <p class="text-lg">
+          ¿Quieres profundizar en estos temas? Echa un vistazo a las siguientes secciones para descubrir más:
+        </p>
+    
+        <ul class="list-disc pl-6 mt-2">
+          <li>
+            Si estás empezando y quieres conocer qué es <a href="/blog/sobre-html">HTML</a>, no te pierdas nuestra primera publicación.
+          </li>
+          <li>
+            Algo esencial para la creación de sitios web es <a href="/blog/sobre-css">CSS</a> que nos permite estilisar nuestras paginas, visita el enlace para más
+          </li>
+          <li>
+            Cualquier pagina necesita interactividad, asi que puedes ver acerca de <a href="/blog/sobre-javascript">Javascript</a> para conocer sobre el tema
+          </li>
+        </ul>
+      </section>
+      <section>
+        <img class="h-96 w-full object-cover my-4" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZ3JhbWFjaW9ufGVufDB8fDB8fHww" alt="">
+        <h1 class="text-center">Motivos del Blog</h1>
+        <p>Lols motivos del blog es brindar conocimiento a las personas que deseen aprender sobre el desarrollo web, ademas de sumergirte en otros conocimiento relacionados, aqui tienes objectivos del blog:</p>
+        <h2>Aprender de programación</h2>
+        <p>En este blog se postearan cosas relacionadas sobre la programación, desde el desarrollo web Front-End hasta el Back-end, y entender como funciona este mundo</p>
+        <img class="h-96 w-full object-cover my-4" src="https://img.freepik.com/foto-gratis/experiencia-programacion-persona-que-trabaja-codigos-computadora_23-2150010125.jpg" alt="">
+        <h2>Diario de aprendizaje</h2>
+        <p>Como un programador siempre se puede seguir aprendiendo, con la salida de nuevas tecnologias, siempre se tiene que estar informado sobre lo ultimo, asi que en este blog se guardara conocimiento de esta área</p>
+        <img class="h-96 w-full object-cover my-4" src="https://img.freepik.com/vector-premium/aprender-leer-ilustracion-concepto-educacion_113065-58.jpg" alt="">
+        <h2>Mas información</h2>
+        <p>Para ver mas proyectos realizados puedes visitar mi pagina de github, y muy pronto una pagina oficial, muchas gracias por su atención</p>
+      </section>
     </main>
     <Footer />
   </body>
